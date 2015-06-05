@@ -89,6 +89,7 @@ regions[header]             = Header
 regions[mininav]            = Mini navbar
 regions[banner]             = Banner
 regions[news]		        = News
+regions[business_routes]    = Bussiness routes
 regions[content]            = Content
 regions[sidebar_first]      = First sidebar
 regions[sidebar_second]     = Second sidebar

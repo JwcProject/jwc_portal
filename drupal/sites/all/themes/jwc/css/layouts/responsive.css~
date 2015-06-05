@@ -119,6 +119,7 @@
     width: 60%;
     margin-left: 20%;
     margin-right: -80%;
+	padding-left: 50px;
 	background: white;
   }
 
@@ -133,8 +134,8 @@
   /* Span 1 column, starting in 5th column from left. */
   .two-sidebars .region-sidebar-second {
     float: left;
-    width: 28%;
-    margin-left: 67%;
+    width: 25%;
+    margin-left: 70%;
     margin-right: -100%;
   }
 }
