@@ -1,0 +1,51 @@
+fieldset, form, label, legend {
+	border: 0px none;
+	margin: 0px;
+	padding: 0px;
+	background: transparent none repeat scroll 0% 0%;
+	outline: 0px none;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+div.search {
+	background: transparent url("../images/form-left.png") no-repeat scroll 0px 0px;
+}
+
+div.search form { margin: 0px; padding: 0px; }
+
+div.search legend {
+	display: none;
+	margin: 0px;
+	padding: 0px;
+	line-height: 0;
+	font-size: 0px;
+}
+
+div.search input {
+	display: inline-block;
+	border: medium none;
+	margin: 0px;
+	padding: 3px 0px 1px;
+	background: transparent none repeat scroll 0% 0%;
+	float: left;
+	width: 142px;
+	height: 18px;
+	font-size: 11px;
+	color: #000;
+	font-family: verdana,arial;
+}
+
+div.search input#search-entry { padding-left: 30px; }
+
+div.search input.submit {
+	margin: 0px 0px 0px 30px;
+	padding: 0px;
+	background: transparent url("../images/form-right.png") no-repeat scroll 0px 0px;
+	float: left;
+	cursor: pointer;
+	width: 20px;
+	height: 22px;
+	text-indent: -999px;
+	overflow: hidden;
+}
