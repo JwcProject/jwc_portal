@@ -38,10 +38,10 @@
 </header>
 
 <div id="main">
-	<div id="navigation">
+	<div id="navigation" class="navigation">
 		<div class="wrapper">
 			<?php if ($main_menu): ?>
-				<nav id="main-menu" role="navigation" tabindex="-1">
+				<nav id="main-menu" class="main-menu" role="navigation" tabindex="-1">
 					<?php
 					// This code snippet is hard to modify. We recommend turning off the
 					// "Main menu" on your sub-theme's settings form, deleting this PHP

@@ -173,10 +173,10 @@ a { text-decoration: none; }
 footer {
 	background: #285B52;
 	clear: both;
-    min-width: 1030px;
+  min-width: 1030px;
 	width: 100%;
 	padding-top: 30px;
-    padding-bottom: 0px;
+  padding-bottom: 0px;
 	float: left;
 	line-height: 1;
 	font-family: "Helvetica Neue",Arial,verdana,sans-serif;
@@ -240,77 +240,78 @@ footer .resources .right-links {
 	float: left;
 }
 
-#block-menu-menu-footer-links .block-title {
-	color: #fff;
+.search-form-spec { margin-right: 5px; }
+
+.block-views {
+	margin-top: 15px;
+}
+
+.block-title {
+	color: #37872d;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.views-title > a {
+	color: #157FAC;
+	font-weight: 700;
+	font-size: 12px;
+}
+
+.views-title > a:hover { color: #285b52; }
+
+.views-updated-date {
+	color: #767676;
+	padding: 0px 0px 8px;
 	font-size: 11px;
-	font-weight: 400px;
-	margin: 0px 0px 6px;
-	line-height: 1;
 }
 
-#block-menu-menu-second-footer-links .block-title {
-	color: transparent;
-	font-size: 11px;
-	font-weight: 400px;
-	margin: 0px 0px 6px;
-	line-height: 1;
+.views-block > .view-content > .views-row {
+	margin: 0px 0px 8px;
+	border-bottom: 1px solid #EEE;
 }
 
-#block-menu-menu-footer-links ul, #block-menu-menu-second-footer-links ul {
-	list-style-type: none;
-	margin: 0px;
-	padding: 0px;
-	list-style: outside none none;
-	line-height: 1;
+.views-news > .view-content > .views-row {
+	position: relative;
+	clear: both;
+	min-height: 80px;
 }
 
-#block-menu-menu-footer-links ul li, #block-menu-menu-second-footer-links ul li {
-	padding: 0px 0px 0px 12px;
-	margin: 0px 0px 6px;
-	background: transparent url("../images/arrow.png") no-repeat scroll 0px 2px;
-	list-style: outside none none;
-	list-style-type: none;
+.views-news-image {
+	float: left;
+	margin: 2px 8px 2px 0px;
 }
 
-#block-menu-menu-footer-links ul li a, #block-menu-menu-second-footer-links ul li a {
-	text-decoration: none;
-	border-bottom: 1px solid #6c5d5e;
-	color: #f1f1f1;
-	cursor: pointer;
-	font-size: 11px;
-	padding: 0px 1px;
-}
-
-#block-menu-menu-mini-nav-menu .block-title {
+.mininav-spec .block-title {
 	display: none;
 }
 
-#block-menu-menu-mini-nav-menu ul {
+.mininav-spec ul {
 	margin: 0px;
 }
 
-#block-menu-menu-mini-nav-menu ul li {
+.mininav-spec ul li {
 	display: inline;
 	margin: 0px 0.8em 0px 0px;
 }
 
-#block-menu-menu-mini-nav-menu ul li a {
+.mininav-spec ul li a {
 	color: #fff;
 	text-decoration: none;
 }
 
-#block-menu-menu-mini-nav-menu ul li a:visited {
+.mininav-spec ul li a:visited {
 	color: #dfdfdf;
 	text-decoration: none;
 }
 
-#block-menu-menu-mini-nav-menu ul li a:hover {
+.mininav-spec ul li a:hover {
 	color: #fff;
 	text-decoration: none;
 }
 
-#navigation {
-    min-width: 1030px;
+.navigation {
+  min-width: 1030px;
 	width: 100%;
 	height: auto;
 	background: #000;
@@ -321,73 +322,72 @@ footer .resources .right-links {
 	line-height: 1em;
 }
 
-#main-menu ul li a {
+.main-menu ul li a {
 	padding: 10px 15px 8px;
 	text-decoration: none;
 	color: #fff;
 	display: block;
 }
 
-#main-menu ul li a:link {
+.main-menu ul li a:link {
 	color: #dfdfdf;
 	text-decoration: none;
 }
 
-#main-menu ul li a:hover {
+.main-menu ul li a:hover {
 	color: #fff;
 	background: #363636;
 	text-decoration: none;
 }
 
-#main-menu ul li a:visited {
+.main-menu ul li a:visited {
 	color: #dfdfdf;
 	text-decoration: none;
 }
 
-#block-views-featured-slider-block h2, #block-views-blocklogo-block h2 { display: none; }
-
-#block-views-event-calendar-block h2, #block-views-news-block h2, #block-views-businessroute-block h2, #block-views-downloadblock-block-1 h2 {
-	color: #37872d;
-	font-weight: 700;
-	font-size: 14px;
+.footer-link-spec ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	list-style: outside none none;
+	line-height: 1;
 }
 
-#block-views-event-calendar-block .views-row, #block-views-news-block .views-row { margin: 0px 0px 8px; border-bottom: 1px solid #eee; }
-
-#block-views-event-calendar-block .view-content .views-row .views-field-title .field-content a, #block-views-news-block .view-content .views-row .views-field-title .field-content a , .view-businessroute .view-content .views-row .views-field-title .field-content a {
-	color: #157fac;
-	font-weight: 700;
-	font-size: 12px;
+.footer-link-spec ul li {
+	padding: 0px 0px 0px 12px;
+	margin: 0px 0px 6px;
+	background: transparent url("../images/arrow.png") no-repeat scroll 0px 2px;
+	list-style: outside none none;
+	list-style-type: none;
 }
 
-#block-views-event-calendar-block .view-content .views-row .views-field-title .field-content a:hover, #block-views-news-block .view-content .views-row .views-field-title .field-content a:hover, .view-businessroute .view-content .views-row .views-field-title .field-content a:hover { color: #285b52 ; }
-
-#block-views-event-calendar-block .view-content .views-row .views-field-changed .field-content, #block-views-news-block .view-content .views-row .views-field-changed .field-content, .view-businessroute .view-content .views-row .views-field-changed .field-content {
-	color: #767676;
-	padding: 0px 0px 8px;
+.footer-link-spec ul li a {
+	text-decoration: none;
+	border-bottom: 1px solid #6c5d5e;
+	color: #f1f1f1;
+	cursor: pointer;
 	font-size: 11px;
+	padding: 0px 1px;
 }
 
-#block-views-news-block .view-content .views-row {
-	position: relative;
-	clear: both;
-	min-height: 80px;
+.footer-link-spec ul li a.active {
+	color: #f1f1f1;
 }
 
-#block-views-news-block .view-content .views-row .views-field-field-image {
-	float: left;
-	margin: 2px 8px 2px 0px;
+.footer-link-spec ul li.is-leaf {
+	list-style-type: none;
 }
 
-#block-views-blocklogo-block, #block-views-news-block, #block-views-businessroute-block, #block-views-downloadblock-block-1 {
-	margin-top: 15px;	
-	margin-bottom: 0px;
+.footer-link-spec ul li a:hover {
+	color: #fff;
 }
 
-#block-views-downloadblock-block-1 {
-	min-height: 150px;
+.footer-link-spec .block-title {
+	color: #fff;
+	font-size: 11px;
+	font-weight: 400px;
+	margin: 0px 0px 6px;
+	line-height: 1;
 }
-
-#block-search-form { margin-right: 5px; }
 
 #views_slideshow_liquid_slider_content_featured_slider-block-wrapper { border-radius: 8px; }
