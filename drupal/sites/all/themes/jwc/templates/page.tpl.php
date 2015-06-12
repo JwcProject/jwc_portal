@@ -10,6 +10,16 @@
 
 <div id="page">
 
+<style>
+html {
+	<?php if ($is_front) { ?>
+		background: #fff url("<?php print drupal_get_path('theme', 'jwc').'/images/bg-body.png' ?>") repeat-x scroll 0px 400px;
+	<?php } else { ?>
+		background: #f8f8f8;
+	<?php } ?>
+}
+</style>
+
 <header class="header" id="header" role="banner">
 
 <div class="wrapper">
@@ -64,32 +74,41 @@
 	</div>
 	<?php if ($is_front) print render($page['banner']); ?>
 	<div class="wrapper">
-		<div id="content" class="column" role="main">
+		
 		<!-- <?php print $breadcrumb; ?> -->
 		<?php if ($is_front) { ?>
+		<div id="content" class="column" role="main">
 			<div class="news">
 				<?php print render($page['news']); ?>
 			</div>
 			<div class="spotlights">
 				<?php print render($page['business_routes']); ?>
 			</div>
-		<?php } else {?>
-			<a id="main-content"></a>
-			<?php print render($title_prefix); ?>
-			<?php if ($title): ?>
-				<h1 class="page__title title" id="page-title"><?php print $title; ?></h1>
-			<?php endif; ?>
-			<?php print render($title_suffix); ?>
-			<?php print $messages; ?>
-			<?php print render($tabs); ?>
-			<?php print render($page['help']); ?>
-			<?php if ($action_links): ?>
-				<ul class="action-links"><?php print render($action_links); ?></ul>
-			<?php endif; ?>
-			<?php print render($page['content']); ?>
-			<?php print $feed_icons; ?>
-		<?php } ?>
 		</div>
+		<?php } else {?>
+		<div class="content" role="main">
+			<div class="content-left">
+				<?php print render($page['content_left']); ?>
+			</div>
+			<div class="content-main">
+				<a id="main-content"></a>
+				<?php print render($title_prefix); ?>
+				<?php if ($title): ?>
+					<h1 class="page__title title" id="page-title"><?php print $title; ?></h1>
+				<?php endif; ?>
+				<?php print render($title_suffix); ?>
+				<?php print $messages; ?>
+				<?php print render($tabs); ?>
+				<?php print render($page['help']); ?>
+				<?php if ($action_links): ?>
+					<ul class="action-links"><?php print render($action_links); ?></ul>
+				<?php endif; ?>
+				<?php print render($page['content']); ?>
+				<?php print $feed_icons; ?>
+			</div>
+		</div>
+		<?php } ?>
+		
 	</div>
 
 <?php if($is_front): ?>
@@ -103,7 +122,8 @@
 	<?php endif; ?>
 <?php endif; ?>
 </div>
-</div>
+
+<?php if($is_front): ?>
 <div class="wrapper color-menu">
 	<ul>
 		<li class="imh first"><a href="http://202.202.1.176:8080/default.aspx">教学管理信息系统</a></li>
@@ -112,6 +132,8 @@
 		<li class="ixy last"><a href="http://222.198.128.199:8080/cquutp_zc/">学生报到注册系统</a></li>
 	</ul>
 </div>
+<?php endif; ?>
+
   <footer class="footer">
   	<div class="wrapper">
 		<div class="siteinfo">
@@ -126,7 +148,6 @@
 			<div class="license">（渝ICP备05005762号）</div>	
 			<div class="copyright">©2015 重庆大学教务处 All Rights Reserved</div>	
 		</div>
-	</div>
 		<div class="resources">
 			<div class="left-links">
 				<?php print render($page['left_footer_links']) ?>			
@@ -135,5 +156,9 @@
 				<?php print render($page['right_footer_links']) ?>
 			</div>
 		</div>
+		<div class="footer-right-slide">
+			<?php print render($page['footer_right_slide']); ?>
+		</div>
+	</div>
   </footer>
 </div>

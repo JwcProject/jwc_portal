@@ -69,6 +69,7 @@ stylesheets[all][] = css/search-form.css
 
 scripts[] = js/jquery.slides.min.js
 scripts[] = js/script.js
+scripts[] = js/carousel.js
 
 
 
@@ -95,8 +96,10 @@ regions[business_routes]    = Bussiness routes
 regions[content]            = Content
 regions[sidebar_first]      = First sidebar
 regions[sidebar_second]     = Second sidebar
+regions[content_left]       = Content Left Panel
 regions[left_footer_links]  = Left Links in the Footer
 regions[right_footer_links] = Right Links in the Footer
+regions[footer_right_slide] = Footer In the Footer Right
 
 ; The page_top and page_bottom regions are hidden, which means they will not
 ; show up on the blocks administration page. But they are required in order for

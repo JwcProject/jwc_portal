@@ -217,9 +217,9 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'drupal',
-      'username' => 'drupal',
-      'password' => 'drupal',
+      'database' => 'jwc_uq',
+      'username' => 'root',
+      'password' => '',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
@@ -258,7 +258,7 @@ $update_free_access = FALSE;
  *   $drupal_hash_salt = file_get_contents('/home/example/salt.txt');
  *
  */
-$drupal_hash_salt = 'O_MXPOmI_XhhkCxAJPFfXW4Uo4cx_Efv7ugDtuLDxOA';
+$drupal_hash_salt = '-DjyCqRTR9itckVrTKBf6MKJsRiF7mlBU4eA5EkFNos';
 
 /**
  * Base URL (optional).

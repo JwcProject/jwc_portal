@@ -130,3 +130,8 @@ function jwc_preprocess_block(&$variables, $hook) {
   //}
 }
 // */
+
+function pre($v){
+	echo '<pre>'.print_r($v,1).'</pre>';
+}
+
