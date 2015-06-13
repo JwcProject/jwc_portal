@@ -18,8 +18,11 @@ Drupal.behaviors.my_custom_behavior = {
   attach: function(context, settings) {
 		// put code here
 		$(document).ready(function() {
-			$('.ls-nav-left-arrow').css('visibility', 'visible');
-			$('.ls-nav-right-arrow').css('visibility', 'visible');
+			$('.organization-nav ul li').hover(function() {
+				$(this).addClass('hover');
+			}, function() {
+				$(this).removeClass('hover');			
+			});
 		});
   }
 };
