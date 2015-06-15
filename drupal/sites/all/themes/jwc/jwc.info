@@ -146,7 +146,7 @@ settings[zen_wireframes]           = 0
 ; To make this sub-theme an admin theme with shortcut links next to titles,
 ; uncomment the line below.
 
-;settings[shortcut_module_link]    = 1
+settings[background_color] = 285B52
 
 ; To add a Panels layout (which can also be used by Display Suite), uncomment
 ; the line below and see the documentation at: https://drupal.org/node/495654

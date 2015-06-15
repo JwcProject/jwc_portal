@@ -503,7 +503,7 @@ footer .resources .right-links {
 }
 .organization-nav ul li.is-expanded ul li a::before {
 	content: url("../images/yellow_arr.gif");
-	padding-left: 0px;
+	padding-right: 30px;
 }
 
 .organization-nav ul li.is-expanded ul li a {

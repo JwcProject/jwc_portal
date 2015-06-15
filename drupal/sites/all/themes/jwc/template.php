@@ -52,11 +52,11 @@ function jwc_preprocess_html(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("page" in this case.)
  */
-/* -- Delete this line if you want to use this function
 function jwc_preprocess_page(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
+	$background_color = theme_get_setting('background_color');
+	drupal_add_css('.header {background: #' . $background_color . ' !important;}', 'inline');
+	drupal_add_css('.footer {background: #' . $background_color . ' !important;}', 'inline');
 }
-// */
 
 /**
  * Override or insert variables into the node templates.
