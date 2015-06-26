@@ -584,7 +584,7 @@ footer .resources .right-links {
 
 .views-page-row{
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 	overflow: hidden;
 	border-bottom: 1px solid #eee;
 	position: relative;
@@ -615,7 +615,7 @@ footer .resources .right-links {
 
 .views-page-row > .views-field > .views-title > a {
 	display: block;
-	font-size: 16px;
+	font-size: 14px;
 	color: #2662E3;
 }
 
