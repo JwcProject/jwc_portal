@@ -17,13 +17,19 @@
 Drupal.behaviors.my_custom_behavior = {
   attach: function(context, settings) {
 		// put code here
-		$(document).ready(function() {
-			$('.organization-nav ul li').hover(function() {
-				$(this).addClass('hover');
-			}, function() {
-				$(this).removeClass('hover');			
+		(function($) {
+			$(document).ready(function() {
+				$('.organization-nav ul li').hover(function() {
+					$(this).addClass('hover');
+				}, function() {
+					$(this).removeClass('hover');			
+				});
+				setTimeout(function(){
+					jQuery('.accordion-header-1').trigger('mouseover');
+				},500);
 			});
-		});
+
+		})(jQuery);
   }
 };
 

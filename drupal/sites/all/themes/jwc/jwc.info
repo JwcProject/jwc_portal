@@ -61,13 +61,12 @@ stylesheets[all][] = css/search-form.css
 ;
 ; If you still wish to use conditional stylesheets, you must install the
 ; conditional stylesheets module: https://drupal.org/project/conditional_styles
-;stylesheets-conditional[lte IE 8][all][] = css/ie8.css
+stylesheets-conditional[lte IE 8][all][] = css/ie8.css
 
 
 
 ; Optionally add some JavaScripts to your theme.
 
-scripts[] = js/jquery.slides.min.js
 scripts[] = js/script.js
 scripts[] = js/carousel.js
 
@@ -90,6 +89,7 @@ scripts[] = js/carousel.js
 
 regions[header]             = Header
 regions[mininav]            = Mini navbar
+regions[main_menu]			= Main menu
 regions[banner]             = Banner
 regions[news]		        = News
 regions[business_routes]    = Bussiness routes

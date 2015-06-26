@@ -31,11 +31,15 @@
 ?>
 
 <div class="search container-inline">
-	<legend>Search website content</legend>
-  <fieldset>
-
-    <input id="search-entry" size="15" value="Search..." name="q" class="s" onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}" tabindex="1" type="text">
-    <input name="submit" value="submit" class="submit" title="Search UQ" type="submit">
-  </fieldset>
+	<?php 
+	$search['search_block_form'] = '
+		<input id="search-entry" size="15" value="Search..." name="search_block_form" class="s" onfocus="if (this.value == \'Search...\') {this.value = \'\';}" onblur="if (this.value == \'\') {this.value = \'Search...\';}" tabindex="1" type="text">
+	'; 
+	$search['submit'] = '<input name="submit" value="submit" class="submit" title="Search JWC_CQU" type="submit">';
+	print $search['search_block_form'];
+	print $search['submit'];
+	print $search['hidden'];
+	?>
 </div>
+
 

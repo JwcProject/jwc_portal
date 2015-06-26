@@ -217,9 +217,9 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'drupal',
-      'username' => 'drupal',
-      'password' => 'drupal',
+      'database' => 'jwc_uq',
+      'username' => 'root',
+      'password' => '',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',

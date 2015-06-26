@@ -29,10 +29,13 @@
 ?>
 <?php if ($rows): ?>
   <div class="view-content wrapper " >
-
     <div class="photo_carousel" style="border-radius: 8px;padding:10px;background:#eee" >
 	  <?php foreach($view->result as $id => $v){ ?>
-		<div ><a href="<?php echo file_create_url($v->field_field_link['0']['raw']['value'])?>" ><img src="<?php echo file_create_url($v->field_field_photo['0']['raw']['uri'])?>" width="960" height="300"></a></div>
+		<div>
+		  <a href="<?php if($v->field_field_link) echo file_create_url($v->field_field_link['0']['raw']['value']); else echo '#';?>" >
+			<img src="<?php echo file_create_url($v->field_field_photo['0']['raw']['uri'])?>" width="960" height="300">
+		  </a>
+		</div>
 	  <?php }?>
 	</div>
   </div>

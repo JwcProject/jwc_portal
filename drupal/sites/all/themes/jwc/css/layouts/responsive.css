@@ -25,8 +25,6 @@
 #header,
 #content,
 #navigation,
-.region-sidebar-first,
-.region-sidebar-second,
 #footer {
   padding-left: 10px;
   padding-right: 10px;
@@ -61,81 +59,4 @@
 #main:after,
 #footer:after {
   clear: both;
-}
-
-
-/**
- * Use 5 grid columns for larger screens.
- */
-@media all {
-
-  /**
-   * The layout when there is only one sidebar, the left one.
-   */
-
-  /* Span 4 columns, starting in 2nd column from left. */
-  .sidebar-first #content {
-    float: left;
-    width: 80%;
-    margin-left: 20%;
-    margin-right: -100%;
-  }
-
-  /* Span 1 column, starting in 1st column from left. */
-  .sidebar-first .region-sidebar-first {
-    float: left;
-    width: 20%;
-    margin-left: 0%;
-    margin-right: -20%;
-  }
-
-  /**
-   * The layout when there is only one sidebar, the right one.
-   */
-
-  /* Span 4 columns, starting in 1st column from left. */
-  .sidebar-second #content {
-    float: left;
-    width: 80%;
-    margin-left: 0%;
-    margin-right: -80%;
-  }
-
-  /* Span 1 column, starting in 5th column from left. */
-  .sidebar-second .region-sidebar-second {
-    float: left;
-    width: 20%;
-    margin-left: 80%;
-    margin-right: -100%;
-  }
-
-  /**
-   * The layout when there are two sidebars.
-   */
-
-  /* Span 3 columns, starting in 2nd column from left. */
-  .two-sidebars #content {
-    float: left;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: -80%;
-	padding-left: 50px;
-	background: white;
-  }
-
-  /* Span 1 column, starting in 1st column from left. */
-  .two-sidebars .region-sidebar-first {
-    float: left;
-    width: 25%;
-    margin-left: 0%;
-    margin-right: -20%;
-  }
-
-  /* Span 1 column, starting in 5th column from left. */
-  .two-sidebars .region-sidebar-second {
-    float: left;
-    width: 25%;
-    margin-left: 70%;
-    margin-right: -100%;
-  }
 }

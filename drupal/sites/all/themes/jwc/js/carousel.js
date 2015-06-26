@@ -10,7 +10,6 @@
          * @date       2013-08-27
          +-------------------------------------------------------------------------------------------------------------
          */
-
         (function($){
             $.fn.kinMaxShow = function(user_options){
                 //默认设置
@@ -74,7 +73,7 @@
                 //加载 解析幻灯片宽和高
                 k.onload = function(){
                     //设置容器尺寸 并且暂时隐藏内容部分
-                    $(k.self).css({width:'100%',height:options.height,overflow:'hidden',position:'relative'}).children('div').addClass(k.prename+'image_item').hide();
+                    $(k.self).css({height:options.height,overflow:'hidden',position:'relative'}).children('div').addClass(k.prename+'image_item').hide();
                     //初始化
                     k.init();
 
